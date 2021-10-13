@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Doggiegram</title>
+</head>
+
+<body>
+  <section id='title' class='colored-section'>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class='navbar-brand href=""'>Doggiegram</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id='navbarmenu'>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class='nav-link' href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class='nav-link' href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class='nav-link' href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="row">
+        <div class="col-lg-6 btn-container title-container">
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <button type="button" class='btn btn-secondary btn-lg' name="button"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class='btn btn-outline-light btn-lg' name="button"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+        <div class="col-lg-6 title-container">
+          <img id='doggie-image' src="images/doggie.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id='features' class='row container-fluid white-section'>
+    <div class="col-lg-4 col-md-12 features">
+      <i class="fas fa-check-circle fa-4x features-icon"></i>
+      <h3>Easy to use.</h3>
+      <p>So easy to use, even your dog could do it.</p>
+    </div>
+    <div class="col-lg-4 col-md-12 features">
+      <i class="fas fa-bullseye fa-4x features-icon"></i>
+      <h3>Elite Clientele.</h3>
+      <p>We have all the dogs, the greatest dogs.</p>
+    </div>
+    <div class="col-lg-4 col-md-12 features">
+      <i class="fas fa-heart fa-4x features-icon"></i>
+      <h3>Guaranteed to work.</h3>
+      <p>Find the love or your dog's life or your money back.</p>
+    </div>
+  </section>
+
+  <section id='testimonials' class='colored-section'>
+    <div id="testimonial-container" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- <h2>I no longer have to sniff other dogs for love. I've found the hottest corgi using this application!</h2> -->
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus enim sit amet sapien commodo pharetra. Quisque et mauris facilisis sem pulvinar congue.</h2>
+          <img class='testimonial-image' src="images/doggie2.jpg" alt="">
+          <em>Parsley, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus enim sit amet sapien commodo pharetra. Quisque et mauris facilisis sem pulvinar congue.</h2>
+          <img class='testimonial-image' src="images/doggie3.jpg" alt="">
+          <em>Lexi, Pasig</em>
+        </div>
+        <div class="carousel-item">
+          <h2>Donec non dictum lacus, nec aliquam nibh. Curabitur consectetur sodales odio. Nullam ac nunc massa. Nam imperdiet ex in nisi posuere dictum. </h2>
+          <img class='testimonial-image' src="images/doggie4.jpg" alt="">
+          <em>Pepper, Laguna</em>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-container" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-container" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section id='press' class='colored-section'>
+    <img src="images/techcrunch.png" alt="">
+    <img src="images/tnw.png" alt="">
+    <img src="images/business-insider.png" alt="">
+    <img src="images/mashable.jpg" alt="">
+  </section>
+
+  <section id='pricing' class='white-section pricing-container'>
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for you and your dog</p>
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="card-container card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>5 Matches per day</p>
+            <p>10 Messages per day</p>
+            <p>Unlimited app usage</p>
+            <button class='btn btn-lg btn-outline-primary btn-style' type="button" name="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card-container card">
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2>$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited app usage</p>
+            <button class='btn btn-lg btn-primary btn-style' type="button" name="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <div class="card-container card">
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2>$99 / mo</h2>
+            <p>Priority listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited app usage</p>
+            <button class='btn btn-lg btn-primary btn-style' type="button" name="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id='cta' class='colored-section'>
+    <div class="cta-container">
+      <h1>Find the True Love of your Dog's Life Today.</h1>
+      <button class='btn btn-dark btn-lg' type="button" name="button"><i class="fab fa-apple"></i> Download</button>
+      <button class='btn btn-light btn-lg' type="button" name="button"><i class="fab fa-google-play"></i> Download</button>
+    </div>
+  </section>
+
+  <footer id='footer' class='white-section'>
+    <div class="icons">
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fas fa-envelope"></i>
+    </div>
+    &copy; Copyright 2021 Doggiegram
+  </footer>
+
+  <span id="return-top">
+    <a href="#title"><i class="fas fa-arrow-up"></i></a>
+  </span>
+</body>
+
+</html>

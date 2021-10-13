@@ -1,0 +1,215 @@
+/* GLOBAL STYLES */
+h1,
+h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+}
+
+p,
+li{
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+}
+
+.white-section {
+  background-color: white;
+  padding: 3% 0;
+}
+
+.colored-section {
+  background-color: #ccc;
+  padding: 3% 0;
+}
+
+.section-container {
+  margin: 5% 15%;
+  border-radius: 15px;
+  padding: 2%;
+}
+
+.section-colored-container{
+  background-color: #E0E0E0;
+}
+
+.icon-containers {
+  text-align: center;
+}
+
+/* GLOBAL STYLES */
+
+
+
+/* HOME PAGE */
+.header {
+  background: url('../images/bg-image.png');
+  background-repeat: no-repeat;
+  padding: 15% 0;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-link{
+  font-size: 1.3rem;
+  margin-right: 15px;
+}
+
+.navbar-brand {
+  padding-left: 1.5%;
+}
+
+.title,
+.position {
+  text-align: center;
+}
+/* HOME PAGE */
+
+/* WORK EXPERIENCE */
+
+.work-list {
+  margin-top: -10px;
+  list-style: circle;
+}
+
+ul {
+  padding-bottom: 1.3rem;
+}
+
+/* WORK EXPERIENCE */
+
+/* SKILLS */
+.skill-icon-container {
+  flex: 1;
+}
+
+.skill-container {
+  flex: 2;
+  padding-top: 50px;
+}
+
+.skill-list{
+  font-size: 1.4rem;
+  display: inline;
+  padding-right: 100px;
+}
+
+.skill-list td {
+  padding: 5px 15px;
+}
+
+/* SKILLS */
+
+/* PROJECTS */
+
+#projects {
+  text-align: center;
+}
+
+.slideshow {
+  margin: 0 auto;
+}
+
+#coming-soon-controls {
+  width: 500px;
+}
+
+.image-container {
+  height: 450px;
+}
+
+/* PROJECTS */
+
+/* FOOTER */
+.icons {
+  text-align: center;
+}
+
+.icons i {
+  padding: 0 15px;
+  color: black;
+}
+
+/* FOOTER */
+
+/* RESPONSIVE */
+@media (min-width: 900px) and (max-width: 1500px){
+  .section-container {
+    flex-direction: column;
+    margin: 5% 7%;
+    padding: 3%;
+  }
+  #work-exp-icon-container {
+    flex-direction: column-reverse;
+  }
+
+  .skill-container {
+    margin: 0 auto;
+  }
+
+  .skill-list {
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+
+  .skill-list td {
+    padding: 5px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 899px){
+  .nav-link{
+    margin-left: 10px;
+  }
+  .section-container {
+    flex-direction: column;
+    margin: 5% 5%;
+    padding: 2%;
+  }
+  .icon-containers {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #work-exp-icon-container {
+    flex-direction: column-reverse;
+  }
+
+  .skill-container {
+    margin: 0 auto;
+  }
+
+  .skill-list {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .skill-list td {
+    padding: 5px 3px;
+  }
+
+  .image-container{
+    height: 250px;
+  }
+
+  #coming-soon-controls{
+    width: 250px;
+  }
+}
+
+/* RESPONSIVE */
