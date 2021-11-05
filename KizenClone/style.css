@@ -231,6 +231,10 @@ nav {
         left: -40px;
     }
 
+    h1 {
+        font-size: 3rem;
+    }
+
     .nav-list {
         display: block;
     }
@@ -242,10 +246,6 @@ nav {
     .main-page {
         position: relative;
     }
-
-    .main-page-container {
-        width: 100%;
-    }
     
     .right-logo {
         display: none;
@@ -254,6 +254,10 @@ nav {
 
     .more-information-features {
         display: inline-block;
+    }
+
+    .information-features img {
+        width: 320px;
     }
 }
 
