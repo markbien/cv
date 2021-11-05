@@ -217,6 +217,11 @@ nav {
 }
 
 @media (max-width: 899px){
+    .body-container,
+    .main-page-container {
+        width: 100%;
+    }
+
     nav {
         display: block;
     }
