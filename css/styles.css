@@ -48,6 +48,14 @@ ul {
   text-align: center;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 /* GLOBAL STYLES */
 
 
@@ -118,8 +126,31 @@ ul {
 
 /* PROJECTS */
 
-#projects {
+#projects,
+.project-list-button,
+.project-slideshow {
   text-align: center;
+}
+
+.project-list-button,
+.project-slideshow{
+  font-size: 0.9rem;
+}
+
+.project-list-button:hover,
+.project-slideshow:hover,
+.project-items a:hover {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.project-list-container {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.project-items a {
+  text-decoration: none;
 }
 
 .slideshow {
