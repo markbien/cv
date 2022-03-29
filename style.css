@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: linear-gradient(90deg, #4f46e5 , #5b21b6);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #3b82f6 ;
+    border-radius: 0 0 70px 70px;
+    padding: 0 50px 0 50px;
+}
+
+nav > ul {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #bfdbfe;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main {
+    margin-top: 100px;
+    padding: 100px;
+}
+
+.short-introduction-container {
+    display: flex;
+    gap: 10px;
+
+    width: 80%;
+    margin: 0 auto;
+
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.short-introduction-container h1 {
+    font-size: 2rem;
+}
+
+.short-introduction-container > img {
+    height: 350px;
+}
+
+@media (max-width: 1250px) and (min-width: 700px){
+    .short-introduction-container {
+        flex-wrap: wrap;
+        width: 95%;
+    }
+}
