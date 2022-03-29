@@ -4,7 +4,7 @@ html {
 }
 
 :root {
-
+    --background-color-theme: #3b82f6;
 }
 
 body {
@@ -20,7 +20,7 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #3b82f6 ;
+    background-color: var(--background-color-theme) ;
     border-radius: 0 0 70px 70px;
     padding: 0 50px 0 50px;
 }
@@ -46,6 +46,11 @@ nav a:hover {
     color: white;
 }
 
+nav li > img {
+    height: 50px;
+    border-radius: 100%;
+}
+
 main {
     margin-top: 100px;
     padding: 100px;
@@ -53,6 +58,7 @@ main {
 
 .short-introduction-container {
     display: flex;
+    flex-direction: column;
     gap: 10px;
 
     width: 80%;
@@ -72,9 +78,18 @@ main {
     height: 350px;
 }
 
-@media (max-width: 1250px) and (min-width: 700px){
-    .short-introduction-container {
-        flex-wrap: wrap;
-        width: 95%;
-    }
+.intro-container span {
+    font-size: 1.4rem;
+}
+
+footer {
+    padding: 15px 25px;
+
+    background-color: var(--background-color-theme);
+    text-align: center;
+}
+
+footer > img {
+    height: 25px;
+    margin: 0 10px;
 }
