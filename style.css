@@ -23,6 +23,9 @@ nav {
     background-color: var(--background-color-theme) ;
     border-radius: 0 0 70px 70px;
     padding: 0 50px 0 50px;
+    z-index: 1;
+
+    transition: all 0.5s ease;
 }
 
 nav > ul {    
@@ -58,7 +61,6 @@ main {
 
 .short-introduction-container {
     display: flex;
-    flex-direction: column;
     gap: 10px;
 
     width: 80%;
@@ -82,6 +84,72 @@ main {
     font-size: 1.4rem;
 }
 
+#work-experience-container,
+#projects {
+    margin: 200px 0 200px 0;
+    text-align: center;
+}
+
+#work-experience-container h1,
+#projects h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+#work-experience,
+.card-container {
+    display: grid;
+    
+    gap: 30px;
+    margin: 20px;
+}
+
+#work-experience > .card > p:nth-child(2) {
+    font-weight: bold;
+}
+
+#work-experience {
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+}
+
+.card-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.card {
+    background-color: white;
+    border: 1px solid white;
+    padding: 15px;
+
+    color: rgba(0,0,0,0.8);
+
+    border-radius: 10px;
+
+    transition: transform 0.3s;
+}
+
+.card > * {
+    margin: 5px;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 90%;
+    height: 75%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 1.7rem;
+}
+.card p {
+    font-size: 1.2rem;
+}
+
 footer {
     padding: 15px 25px;
 
@@ -92,4 +160,37 @@ footer {
 footer > img {
     height: 25px;
     margin: 0 10px;
+}
+
+@media (max-width: 1200px) and (min-width: 801px) {
+    .short-introduction-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px){
+    nav {
+        left: 0;        
+        border-radius: 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+    .short-introduction-container {
+        flex-direction: column;
+    }
+
+    .short-introduction-container h1 {
+        font-size: 1.5rem;
+    }
+
+    #work-experience,
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    #projects > .card-container > .card {
+        height: 400px;
+    }
 }
