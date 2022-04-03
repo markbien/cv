@@ -60,7 +60,7 @@ nav li > img {
 }
 
 main {
-    margin-top: 100px;
+    margin: 100px 0;
     padding: 100px;
 }
 
@@ -169,6 +169,29 @@ footer {
 footer img {
     height: 25px;
     margin: 0 10px;
+}
+
+.division {
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.division span {
+    width: 45%;
+    height: 3px;
+    background-color: var(--title);
+}
+
+.division img{
+    height: 15px;
+}
+
+.division img:nth-child(3){
+    height: 20px;
 }
 
 @media (max-width: 1200px) and (min-width: 801px) {
