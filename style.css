@@ -4,14 +4,19 @@ html {
 }
 
 :root {
-    --background-color-theme: #3b82f6;
+    --background-color-theme: #71C9CE;
+    --first-gradient: #A6E3E9;
+    --second-gradient: #CBF1F5;
+    --main-title: black;
+    --title: black;
+    --card-background: #E3FDFD;
 }
 
 body {
     margin: 0;
     padding: 0;
 
-    background: linear-gradient(90deg, #4f46e5 , #5b21b6);
+    background: linear-gradient(90deg, var(--first-gradient) , var(--second-gradient));
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -40,13 +45,13 @@ nav > ul {
 
 nav a {
     text-decoration: none;
-    color: #bfdbfe;
+    color: var(--title);
     font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: white;
+    color: var(--card-background);
 }
 
 nav li > img {
@@ -55,7 +60,7 @@ nav li > img {
 }
 
 main {
-    margin-top: 100px;
+    margin: 100px 0;
     padding: 100px;
 }
 
@@ -66,7 +71,7 @@ main {
     width: 80%;
     margin: 0 auto;
 
-    color: white;
+    color: var(--main-title);
     justify-content: center;
     align-items: center;
     text-align: justify;
@@ -94,7 +99,7 @@ main {
 
 #work-experience-container h1,
 #projects h1 {
-    color: white;
+    color: var(--main-title);
     font-size: 3rem;
 }
 
@@ -119,11 +124,11 @@ main {
 }
 
 .card {
-    background-color: white;
-    border: 1px solid white;
+    background-color: var(--card-background);
+    border: 1px solid var(--card-background);
     padding: 15px;
 
-    color: rgba(0,0,0,0.8);
+    color: var(--main-title);
 
     border-radius: 10px;
 
@@ -157,11 +162,36 @@ footer {
 
     background-color: var(--background-color-theme);
     text-align: center;
+    color: var(--title);
+    font-weight: bold;
 }
 
 footer img {
     height: 25px;
     margin: 0 10px;
+}
+
+.division {
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.division span {
+    width: 45%;
+    height: 3px;
+    background-color: var(--title);
+}
+
+.division img{
+    height: 15px;
+}
+
+.division img:nth-child(3){
+    height: 20px;
 }
 
 @media (max-width: 1200px) and (min-width: 801px) {
